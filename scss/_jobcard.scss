@@ -1,0 +1,17 @@
+.job-card {
+  background-color: beige;
+  color: rgb(54, 55, 54);
+  height: 30%;
+  width: 40%;
+  border-radius: 15px;
+  padding: 2rem;
+  line-height: 2;
+  text-transform: capitalize;
+
+  .passed-date {
+    background-color: azure;
+    padding: 0 1rem;
+    border-radius: 15px;
+    width: fit-content;
+  }
+}

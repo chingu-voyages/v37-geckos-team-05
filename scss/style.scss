@@ -1,0 +1,149 @@
+@import "jobcard";
+//color
+$color-main: rgba(148, 194, 186, 1);
+$color-dark: rgba(42, 47, 46, 1);
+$color-light: rgba(230, 239, 237, 1);
+
+//margin
+$page-margin-mobile: 1rem;
+$page-margin-tablet: 2rem 3rem;
+
+//border radius
+$border-radius: 15px;
+
+//responsive
+$tablet: 768px;
+$desktop: 1200px;
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  background-color: $color-light;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+//header
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: $page-margin-mobile;
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: $color-dark;
+  }
+  @include tablet {
+    padding: $page-margin-tablet;
+  }
+}
+
+//landing
+.landing {
+  min-height: 100vh;
+  position: relative;
+  color: $color-dark;
+  margin: $page-margin-mobile;
+  .manifesto {
+    position: absolute;
+    top: 75%;
+    line-height: 1.7;
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      a {
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+  }
+  .pic {
+    position: absolute;
+    height: 65%;
+    width: 100%;
+    top: 5%;
+    background-color: $color-main;
+    border-radius: $border-radius;
+    z-index: -1;
+  }
+  @include tablet {
+    margin: $page-margin-tablet;
+    .manifesto {
+      top: 60%;
+
+      h2 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+    .pic {
+      top: 25%;
+      width: 75%;
+      right: 0;
+    }
+  }
+}
+
+//job search
+.job-search {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $color-dark;
+  margin: $page-margin-mobile;
+  h2 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+  input {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+  }
+  .search-btn {
+    background-color: $color-main;
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0.5rem;
+    border-radius: 5px;
+  }
+  @include tablet {
+    margin: $page-margin-tablet;
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}

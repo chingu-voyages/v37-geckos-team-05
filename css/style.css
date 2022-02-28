@@ -1,0 +1,183 @@
+.job-card {
+  background-color: beige;
+  color: #363736;
+  height: 30%;
+  width: 40%;
+  border-radius: 15px;
+  padding: 2rem;
+  line-height: 2;
+  text-transform: capitalize;
+}
+
+.job-card .passed-date {
+  background-color: azure;
+  padding: 0 1rem;
+  border-radius: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #e6efed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+header a {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #2a2f2e;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 2rem 3rem;
+  }
+}
+
+.landing {
+  min-height: 100vh;
+  position: relative;
+  color: #2a2f2e;
+  margin: 1rem;
+}
+
+.landing .manifesto {
+  position: absolute;
+  top: 75%;
+  line-height: 1.7;
+}
+
+.landing .manifesto h2 {
+  font-size: 1.5rem;
+}
+
+.landing .manifesto p {
+  font-size: 1.2rem;
+}
+
+.landing .manifesto p a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.landing .pic {
+  position: absolute;
+  height: 65%;
+  width: 100%;
+  top: 5%;
+  background-color: #94c2ba;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .landing {
+    margin: 2rem 3rem;
+  }
+  .landing .manifesto {
+    top: 60%;
+  }
+  .landing .manifesto h2 {
+    font-size: 3rem;
+  }
+  .landing .manifesto p {
+    font-size: 2rem;
+  }
+  .landing .pic {
+    top: 25%;
+    width: 75%;
+    right: 0;
+  }
+}
+
+.job-search {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #2a2f2e;
+  margin: 1rem;
+}
+
+.job-search h2 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.job-search input {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+
+.job-search .search-btn {
+  background-color: #94c2ba;
+  color: #fff;
+  padding: 1rem;
+  width: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .job-search {
+    margin: 2rem 3rem;
+  }
+  .job-search h2 {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
