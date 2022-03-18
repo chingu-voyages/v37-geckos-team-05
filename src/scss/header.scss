@@ -26,8 +26,9 @@
 header {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  padding: 2rem;
+  padding: 1.5rem 1rem;
   // z-index: 1;
   display: flex;
   justify-content: space-between;
@@ -41,5 +42,9 @@ header {
     padding: 0;
     margin: 0%;
     display: inline;
+  }
+
+  @include tablet {
+    padding: 2.5rem 2rem;
   }
 }
