@@ -7,6 +7,7 @@
   width: 100vw;
   display: grid;
   place-content: center;
+  padding: 1rem;
 }
 h1 {
   position: relative;
@@ -47,7 +48,7 @@ strong {
   width: 100%;
   max-width: 1140px;
   max-height: 640px;
-  padding: 8rem 6rem;
+  // padding: 8rem 6rem;
   display: flex;
   align-items: center;
   background: rgba(255, 255, 255, 0.375);
@@ -157,10 +158,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 840px) {
-  body {
-    padding: 1.5rem;
-  }
-
   .overlay {
     padding: 4rem;
     height: auto;
