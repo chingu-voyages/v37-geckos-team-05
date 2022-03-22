@@ -1,0 +1,31 @@
+.job-card {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.375);
+  box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+
+  .company-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    .job-logo {
+      height: 2rem;
+      border-radius: 50%;
+    }
+  }
+
+  .tags {
+    display: flex;
+    gap: 1rem;
+    .job-tag {
+      text-transform: capitalize;
+      background-color: $color-main;
+      padding: 0.5em 1em;
+      border-radius: 0.5rem;
+    }
+  }
+}
