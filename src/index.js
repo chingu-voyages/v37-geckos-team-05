@@ -2,14 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom"
 import './index.scss';
-// import SearchTest from './componets/SearchTest';
-import Landing from './components/Landing'
-import Signin from './components/Signin';
-import SearchJobs from './components/SearchJobs';
-import App from './App.js';
+import Header from './components/Header/Header'
+import Landing from './components/Landing/Landing'
+import Signin from './components/Signin/Signin';
+import SearchJobs from './components/SearchJob/SearchJobs';
+// import App from './App.js';
 
 
 ReactDOM.render(
+  // <>
+  //   <Header />
+  //   <div>hi</div>
+  // </>
+
   // <App />,
   <Router>
     <Routes>

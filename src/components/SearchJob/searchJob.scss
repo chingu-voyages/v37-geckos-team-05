@@ -1,0 +1,41 @@
+.search-job {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .search {
+    display: flex;
+    width: 60%;
+    background: rgb(251, 221, 244);
+    border-radius: 0.5rem;
+    .text-box {
+      width: 80%;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      padding: 0 1rem;
+      background-color: transparent;
+    }
+
+    .btn {
+      width: 20%;
+    }
+  }
+
+  .search-text {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .job-input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 1rem 0;
+  }
+}

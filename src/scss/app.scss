@@ -16,8 +16,10 @@ body {
 body {
   background: linear-gradient(-45deg, #654ea3, #eaafc8, #fbd3e9, #d863a2);
   background-size: 400% 400%;
+  // background-repeat: no-repeat;
+
   animation: gradient 15s ease infinite;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* background gradient change */
