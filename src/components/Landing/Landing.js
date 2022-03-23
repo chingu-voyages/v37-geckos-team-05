@@ -4,9 +4,6 @@ import { Link } from 'react-router-dom'
 const Landing = () => {
     return (
         <div className="landing">
-            {/* Canvas */}
-            {/* <canvas className="orb-canvas" /> */}
-            {/* Overlay */}
             <div className="overlay">
                 {/* Overlay inner wrapper */}
                 <div className="overlay__inner">
@@ -21,9 +18,10 @@ const Landing = () => {
                     </p>
                     {/* Buttons */}
                     <div className="overlay__btns">
-                        <button className="overlay__btn overlay__btn--transparent">
-                            <Link to={"/signin"}>Signup</Link>
-                        </button>
+                        <Link to={"/signin"}
+                            className="overlay__btn overlay__btn--transparent">
+                            Signup
+                        </Link>
                     </div>
                 </div>
             </div>

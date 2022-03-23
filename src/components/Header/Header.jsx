@@ -4,9 +4,16 @@ import { Link } from 'react-router-dom'
 const Header = () => {
     return (
         <header>
-            {/* <h1>Header</h1> */}
-            <h1 className="logo text-gradient"><Link to="/">Aicareer</Link></h1>
-            <Link to="/searchjobs" className="header-search text-gradient">Job Search</Link>
+            <h1><Link to="/"
+            className="logo text-gradient">Aicareer</Link></h1>
+            <ul>
+                <li>
+                    <Link to="/searchjobs" className="text-gradient">Job Search</Link>
+                </li>
+                <li>
+                    <Link to="/signin" className="text-gradient">Sign in</Link>
+                </li>
+            </ul>
         </header>
     )
 }

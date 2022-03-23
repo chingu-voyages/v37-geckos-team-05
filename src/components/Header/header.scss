@@ -1,33 +1,10 @@
-// @import "../main.scss";
-// .header {
-//   position: fixed;
-//   top: 0;
-//   width: 100%;
-//   z-index: 1;
-//   display: flex;
-//   flex-direction: row;
-//   align-items: center;
-//   justify-content: space-between;
-//   padding: $page-margin-mobile;
-//   background-color: $color-light;
-//   box-shadow: $box-shadow;
-//   a {
-//     text-decoration: none;
-//     font-weight: bold;
-//     text-transform: capitalize;
-//     color: $color-dark;
-//   }
-//   @include tablet {
-//     padding: $page-margin-tablet;
-//   }
-// }
 // /* top of page */
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.5rem 2rem;
+  padding: $page-margin-mobile;
   // z-index: 1;
   display: flex;
   justify-content: space-between;
@@ -37,13 +14,19 @@ header {
     font-size: 1.5rem;
   }
 
-  .header-search {
-    padding: 0;
-    margin: 0%;
-    display: inline;
+  ul {
+    display: flex;
+    li {
+      padding: 0 1rem;
+      list-style: none;
+      font-weight: bold;
+    }
+  }
+  .text-gradient {
+    -webkit-text-fill-color: rgba(178, 17, 193, 0.598);
   }
 
   @include tablet {
-    // padding: 2.5rem 2rem;
+    padding: $page-margin-tablet;
   }
 }

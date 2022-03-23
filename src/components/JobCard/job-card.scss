@@ -1,26 +1,48 @@
 .job-card {
-  margin: 1rem;
-  padding: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.375);
-  box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
-  border-radius: 2rem;
+  // box-shadow: 0 0.5rem 0.2rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.125);
+  display: flex;
+  flex-direction: column;
+  position: relative;
 
-  .company-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1rem;
-    .job-logo {
-      height: 2rem;
-      border-radius: 50%;
+  @include tablet {
+    padding: 2rem 2.5rem;
+  }
+
+  .job-title {
+    width: 80%;
+    font-size: 1.3rem;
+  }
+  .job-company {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .job-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.5rem;
+    height: 3em;
+    border-radius: 0.5rem;
+
+    @include tablet {
+      margin: 2rem 2.5rem;
     }
   }
 
   .tags {
+    width: 90%;
     display: flex;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
     .job-tag {
       text-transform: capitalize;
       background-color: $color-main;
