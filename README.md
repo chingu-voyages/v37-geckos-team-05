@@ -1,10 +1,15 @@
 # Job APP
+Our mission is to help people find a remote job worldwidely.
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-Our mission is to help people find a remote job worldwidely.\
-[LIVE LINK](https://acareer.netlify.app/)
+![Product Name Screen Shot](https://github.com/chingu-voyages/v37-geckos-team-05/blob/Final-files/product.gif)
+
+[LIVE LINK](https://acareer.netlify.app/)\
+\
 This project was created as part of Chingu Voyage 37.
+
+<!-- GETTING STARTED -->
+
 ### Built With
 * [React.js](https://reactjs.org/)
 * [Sass](https://sass-lang.com/)
