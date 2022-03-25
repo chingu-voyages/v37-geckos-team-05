@@ -3,7 +3,7 @@
 ## About The Project
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 Our mission is to help people find a remote job worldwidely.\
-[LIVE LINK](https://jobappreact.netlify.app/)
+[LIVE LINK](https://acareer.netlify.app/)
 This project was created as part of Chingu Voyage 37.
 ### Built With
 * [React.js](https://reactjs.org/)
