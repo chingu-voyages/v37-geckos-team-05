@@ -19,6 +19,10 @@
   .job-title {
     width: 80%;
     font-size: 1.3rem;
+
+    @include tablet {
+      font-size: 1.5rem;
+    }
   }
   .job-company {
     font-weight: bold;
@@ -43,10 +47,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin: 1rem 0;
+    margin: 0.7rem 0;
     .job-tag {
-      text-transform: capitalize;
+      text-transform: uppercase;
       background-color: $color-main;
+      font-weight: bold;
+      font-size: 0.7rem;
+      color: #fff;
       padding: 0.5em 1em;
       border-radius: 0.5rem;
     }

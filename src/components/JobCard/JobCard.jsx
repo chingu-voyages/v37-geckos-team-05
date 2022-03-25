@@ -19,17 +19,17 @@ const JobCard = ({job}) => {
           <img src={job.company_logo} alt="Company Logo" className="job-logo" />
           <p className="job-company">{job.company_name}</p>
         </div>
-        <p className="job-location">Location: {job.candidate_required_location}</p>
+        <p className="job-location">Location: <strong>{job.candidate_required_location}</strong></p>
     
         {
           job.salary ? 
-          (<p className="job-salary">Salary: {job.salary}</p>)
+          (<p className="job-salary">Salary: <strong>{job.salary}</strong></p>)
           : (<p className="job-salary">Salary: ---</p>)
         }
 
         {
           job.type ? 
-          (<p className="job-type">type: {job.type}</p>)
+          (<p className="job-type">type: <strong>{job.type}</strong></p>)
           : (<p className="job-type">type: ---</p>)
         }
    
