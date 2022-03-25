@@ -4,7 +4,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Our mission is to help people find a remote job worldwidely. /
+Our mission is to help people find a remote job worldwidely.\
 
 [LIVE LINK](https://jobappreact.netlify.app/)
 
@@ -25,7 +25,7 @@ This project was created as part of Chingu Voyage 37.
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+### Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
@@ -33,7 +33,7 @@ To get a local copy up and running follow these simple example steps.
 
 2. In the project directory, you can run:
 
- ### `npm start`
+ #### `npm start`
 
 - Runs the app in the development mode.\
 - Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
