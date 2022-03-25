@@ -33,7 +33,7 @@ To get a local copy up and running follow these simple example steps.
 
 2. In the project directory, you can run:
 
-  ```
+  ```sh
   npm start
   ```
 
