@@ -1,4 +1,4 @@
-#Job APP
+Job APP
 About The Project
 ![Product Name Screen Shot][product-screenshot]
 
