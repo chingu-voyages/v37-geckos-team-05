@@ -1,0 +1,25 @@
+.filters {
+  margin-top: 1rem;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.7rem;
+  display: none;
+
+  button {
+    display: inline;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+    color: #7257fa;
+    // font-weight: normal;
+    background-color: rgb(251, 221, 244);
+    // border: 1px solid #7257fa;
+  }
+
+  @include tablet {
+    display: flex;
+  }
+}

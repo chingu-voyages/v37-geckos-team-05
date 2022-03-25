@@ -5,11 +5,16 @@ const Header = () => {
     return (
         <header>
             <h1><Link to="/"
-            className="logo text-gradient">Aicareer</Link></h1>
+            className="logo text-gradient">ACareer</Link></h1>
             <ul>
                 <li>
                     <Link to="/searchjobs" className="text-gradient">Job Search</Link>
                 </li>
+                
+                <li>
+                    <Link to="/about" className="text-gradient">About Us</Link>
+                </li>
+
                 <li>
                     <Link to="/signin" className="text-gradient">Sign in</Link>
                 </li>

@@ -33,6 +33,7 @@
       padding: 0 1rem;
       background: rgb(251, 221, 244);
       border-radius: 0.5rem 0 0 0.5rem;
+      color: #413679;
     }
 
     .btn {
@@ -47,7 +48,8 @@
 
   .job-list {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     border-radius: 0.5rem;
     height: 100%;
     width: 100%;
@@ -55,8 +57,14 @@
     margin-top: 1rem;
 
     @include tablet {
-      margin-top: 1.5rem;
+      margin-top: 1.3rem;
       width: 70%;
+    }
+
+    .result {
+      display: grid;
+      place-content: center;
+      height: 10%;
     }
   }
 }

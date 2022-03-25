@@ -50,6 +50,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
+  color: #413679;
 }
 
 /* page background */
@@ -80,7 +81,7 @@ a,
   color: var(--dark-color);
   display: grid;
   place-content: center;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   overflow: hidden;
   transition: 0.5s;
 }
